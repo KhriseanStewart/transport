@@ -1,0 +1,150 @@
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 99%;
+    height: 100px;
+    position: fixed;  /* or absolute if you're placing it within a parent */
+    top: 0;          /* Align at the very top */
+    left: 0;         /* Align to the left */
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    border-radius: 1%;
+    z-index: 1000;   /* Ensure it appears above other content */
+  }
+  .TRR{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-size-adjust: 20px;
+  }
+
+  .nav-logo {
+    width: 80px;
+  }
+  
+  .nav-logo img {
+    height: 60px; /* Adjust logo height */
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .Menu-icon {
+    cursor: pointer;
+    font-size: 24px; /* Increase size for tap target */
+    transition: transform 0.2s; /* Optional: animation effect */
+  }
+  .Menu-icon:hover {
+    transform: scale(1.4); /* Slightly increase the size on hover */
+  }
+  
+  .nav-menu {
+    display: none; /* Hide by default */
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .nav-menu.active {
+    display: flex; /* Show when active */
+    flex-direction: column; /* Stack vertically */
+    position: absolute; /* Make it float over other content */
+    background-color: #fff; /* Adjust this as required */
+    top: 90px; /* Adjust this to position below the toolbar */
+    right: 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for aesthetics */
+  }
+  
+  .nav-item {
+    padding: 10px; /* Padding for clickable areas */
+  }
+  
+  .nav-links {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Default link color */
+  }
+
+  @media (max-width: 413px) {
+    .nav-bar{
+      width: 100%;
+    }
+    .TRR {
+      font-size: 10px;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .TRR {
+      font-size: 18px; /* Medium size for tablet */
+    }
+    .nav-logo img{
+      width: 40px;
+      height: 40px;
+    }
+    .nav-logo {
+      width: 90px;
+    }
+    
+    .nav-bar {
+      height: 90px; /* Adjust height for tablet */
+    }
+  
+    .socials i {
+      font-size: 25px; /* Medium icons */
+    }
+  
+    .hero-statement {
+      font-size: 30px; /* Adjust font size for tablet */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .TRR {
+      font-size: 24px; /* Larger text on small laptops */
+    }
+    
+    .nav-bar {
+      height: 100px; /* Return to full height */
+    }
+  
+    .socials i {
+      font-size: 28px; 
+    }
+  
+    .hero-statement {
+      font-size: 50px; 
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .TRR {
+      font-size: 36px; /* Larger text on large laptops */
+    }
+  
+    .hero-statement {
+      font-size: 75px; 
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .TRR {
+      font-size: 48px; /* Larger text on desktops */
+      height: 0px;
+    }
+    .nav-logo img{
+      width: 120px;
+      height: 120px;
+    }
+    .nav-logo {
+      height: 60px;
+      width: 130px;
+    }
+  
+    .hero-statement {
+      font-size: 100px; /* Default or larger font for desktops */
+    }
+    .socials,
+    .socials i{
+      height: 0;
+      font-size: 60px;
+    }
+  }

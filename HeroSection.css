@@ -1,0 +1,149 @@
+/*Hero Section*/
+
+.Hero {
+    width: 100%;              /* Set the Hero section to full width */
+    height: auto;             /* Allow the height to adjust based on content */
+    overflow: hidden;         /* Hide any overflow if needed */
+  }
+  
+  .Assetone {
+    width: 100%;              /* Image takes the full width of its container */
+    height: auto;             /* Maintain the aspect ratio */
+    object-fit: cover;        /* Maintains aspect ratio */
+    border: 1px solid black;
+    animation: parallaxAnimation 1s ease-in-out forwards; /* Keyframe animation */
+  }
+  
+  @keyframes parallaxAnimation {
+    from {
+        transform: translateY(20px); /* Start off with a slight downward translation */
+        opacity: 0;                  /* Make it invisible initially */
+    }
+    to {
+        transform: translateY(0px);  /* Slide to original position */
+        opacity: 1;                  /* Fade into full visibility */
+    }
+  }
+  .HeroText {
+    position: absolute;       /* Position text absolutely */
+    top: 50%;                 /* Centered vertically */
+    left: 30%;                /* Centered horizontally */
+    transform: translate(-50%, -50%); /* Adjust to center */
+    color: white;             /* Adjust text color to stand out */
+    text-align: center;      /* Center align text */
+    padding: 1rem;           /* Padding if necessary */
+    /*background-color: rgba(0, 0, 0, 0.5); /* Optional: semi transparent background for text */
+    border-radius: 8px;      /* Optional: rounded corners */
+    cursor: default;
+  }
+  .hero-statement{
+    font-size: 90px;
+    text-shadow: 
+    -3px -1px 0px rgba(0, 0, 0, 0.9),  /* Left Top Shadow */
+    3px -1px 0px rgba(0, 0, 0, 0.9),   /* Right Top Shadow */
+    -3px 1px 0px rgba(0, 0, 0, 0.9),   /* Left Bottom Shadow */
+    3px 1px 0px rgba(0, 0, 0, 0.9);    /* Right Bottom Shadow */
+  }
+  
+  /* Media Queries */
+@media (max-width: 480px) {
+    .TRR {
+      font-size: 12px; /* Smaller font size for mobile */
+    }
+    
+    .nav-bar {
+      height: 80px; /* Smaller height for mobile */
+    }
+    .nav-logo img{
+      width: 20px;
+      height: 20px;
+    }
+    .nav-logo {
+      width: 40px;
+    }
+    
+    .socials i {
+      font-size: 20px; /* Smaller icons */
+    }
+  
+    .hero-statement {
+      font-size: 20px; /* Smaller font for hero text on mobile */
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .TRR {
+      font-size: 18px; /* Medium size for tablet */
+    }
+    .nav-logo img{
+      width: 40px;
+      height: 40px;
+    }
+    .nav-logo {
+      width: 90px;
+    }
+    
+    .nav-bar {
+      height: 90px; /* Adjust height for tablet */
+    }
+  
+    .socials i {
+      font-size: 25px; /* Medium icons */
+    }
+  
+    .hero-statement {
+      font-size: 30px; /* Adjust font size for tablet */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .TRR {
+      font-size: 24px; /* Larger text on small laptops */
+    }
+    
+    .nav-bar {
+      height: 100px; /* Return to full height */
+    }
+  
+    .socials i {
+      font-size: 28px; 
+    }
+  
+    .hero-statement {
+      font-size: 50px; 
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1440px) {
+    .TRR {
+      font-size: 36px; /* Larger text on large laptops */
+    }
+  
+    .hero-statement {
+      font-size: 75px; 
+    }
+  }
+  
+  @media (min-width: 1441px) {
+    .TRR {
+      font-size: 48px; /* Larger text on desktops */
+      height: 0px;
+    }
+    .nav-logo img{
+      width: 120px;
+      height: 120px;
+    }
+    .nav-logo {
+      height: 60px;
+      width: 130px;
+    }
+  
+    .hero-statement {
+      font-size: 100px; /* Default or larger font for desktops */
+    }
+    .socials,
+    .socials i{
+      height: 0;
+      font-size: 60px;
+    }
+  }

@@ -1,0 +1,15 @@
+.socials {
+    list-style: none;       /* Remove bullets */
+    display: flex;          /* Use flexbox for horizontal alignment */
+    gap: 15px;             /* Optional: space between icons */
+  }
+  
+  .socials i {
+    font-size: 30px;       /* Increase the size of the icons */
+    cursor: pointer;       /* Change cursor to pointer on hover */
+    transition: transform 0.2s; /* Optional: animation effect */
+  }
+  
+  .socials i:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+  }

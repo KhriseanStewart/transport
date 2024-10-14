@@ -1,0 +1,32 @@
+.Business-Card{
+    margin: 100px;
+    text-align: center;
+    color: black;
+}
+.Facebook{
+    border-color: black;
+    width: 150px;
+}
+.TikTok{
+    border-color: black;
+    width: 150px;
+    background-color: grey;
+    color: white;
+}
+.IG{
+    border-color: black;
+    width: 150px;
+    background-color: grey; 
+    color: white;
+}
+.Linkedln{
+    border-color: black;
+    width: 150px;
+    color: black;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+}
